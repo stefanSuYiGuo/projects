@@ -1,6 +1,6 @@
 # Projects-Development
 
-This is a repository created by Stefan Su. All projects can be seen and folked above.
+This is a repository created by Stefan Su. All projects can be seen and forked above.
 
 ---
 
