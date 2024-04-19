@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{{ title }}</h1>
+{% endblock %}
+
+{% block success_content %}
+    Hello, {{name}}. Login success!<br>
+    Your role is {{role}}<br>
+    Course<br>
+    {% for course in course_list %}
+        <h1>{{ course.value() }}</h1>
+    {% endfor %}
+    <h1>Go to home page in <span id="countdown">3</span>S</h1>
+    <script>
+        var seconds = document.getElementById("countdown").textContent;
+        var countdown = setInterval(function() {
+            seconds--;
+            document.getElementById("countdown").textContent = seconds;
+            if (seconds <= 0) clearInterval(countdown);
+        }, 1000);
+        setTimeout(function() {
+<!--        http://127.0.0.1:5050/user/teacherLogin/success/{{name}}/{{role}}-->
+            window.location.href = 'http://127.0.0.1:5050/courseDesigner/{{role}}/{{name}}/main';
+           }, 3000);
+    </script>
+{% endblock %}

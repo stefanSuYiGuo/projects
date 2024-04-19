@@ -1,0 +1,60 @@
+<div>
+    <div class="row mb-3 align-items-center" id="AssessmentInput">
+        <!--        <span class="input-group-text">Input Assessment</span>-->
+        <!--        <input type="text" class="form-control" placeholder="Input Assessment Here" name="assessment">-->
+        <div class="col-md-6">
+            <h4><span class="badge bg-secondary">Common Assessment Methods</span></h4>
+            <div class="list-group">
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" name="assessment" value="Attendance">
+                    Attendance
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" name="assessment" value="Quiz">
+                    Quiz
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" name="assessment" value="Midterm Examination">
+                    Midterm Examination
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" name="assessment" value="Final Examination">
+                    Final Examination
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" name="assessment" value="Group Project">
+                    Group Project
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" name="assessment" value="Individual Project">
+                    Individual Project
+                </label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h4><span class="badge bg-secondary">CILOs of {{ course_code }}</span></h4>
+            <ol class="list-group list-group-numbered">
+                {% for CILO in getCILOs_list %}
+                    <li class="list-group-item">{{ CILO }}</li>
+                {% endfor %}
+            </ol>
+        </div>
+    </div>
+</div>
+<button type="button" class="btn btn-dark" style="font-size:18px" id="newAssessment">
+    <i class="fa fa-plus"></i>
+    Add an Assessment
+</button>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+		$("#newAssessment").click(function() {
+			$("#AssessmentInput").append('<div class="input-group mb-3">');
+			$("#AssessmentInput").append('<span class="input-group-text">Input Assessment</span>');
+			$("#AssessmentInput").append('<input type="text" class="form-control" placeholder="Input New Assessment Method Here" name="assessment">');
+			$("#AssessmentInput").append('</div>');
+		});
+	});
+</script>

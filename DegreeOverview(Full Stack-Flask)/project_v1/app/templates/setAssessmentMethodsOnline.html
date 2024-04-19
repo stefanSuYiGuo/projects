@@ -1,0 +1,29 @@
+<h5 class="card-title">Create Assessment Methods Online</h5>
+<p class="card-text">By clicking Go and Set button below, a course designer can set assessment methods Online.</p>
+<!--<a href="#" class="btn btn-primary">Go and Set</a>-->
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdropAssessment">
+    Go and Set
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdropAssessment" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+     aria-labelledby="staticBackdropAssessmentLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <form method="post" action="../../../courseDesigner/addAssessments">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropAssessmentLabel">Set Assessments</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    {% include 'setAssessmentsOnlineModalForm.html' %}
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

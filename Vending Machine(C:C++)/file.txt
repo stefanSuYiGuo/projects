@@ -1,0 +1,7 @@
+Names		ID	Amount	Price	Type
+Coke		1	0	0	C
+Sprite		2	31	15	C
+Pepsi		3	55	5	C
+Fanda		4	109	5	C
+LemondTea		5	9	10	WC
+Dora		8	6	50	wc

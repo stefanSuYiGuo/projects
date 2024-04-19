@@ -1,0 +1,44 @@
+<div class="container-fluid" style="margin-top: 30px; margin-left: 10%; margin-right: 10%; width: 80%;">
+    <div class="row">
+        <!--                {% for key, value in course_display_style_info_dict.items() %}-->
+        <!--                <div class="card text-white {{ value[0] }} col-sm-3" style="margin: 2%;">-->
+        <!--                    <div class="card-header">-->
+        <!--                        <a role="button" class="btn btn-link" href="http://127.0.0.1:5050/course/{{key}}/detail">-->
+        <!--                            {{ key }}-->
+        <!--                        </a>-->
+        <!--                    </div>-->
+        <!--                    <div class="card-body">-->
+        <!--                        <h5 class="card-title">{{ value[1] }}</h5>-->
+        <!--                        <p class="card-text">Participants: {{ value[2] }}</p>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--                {% endfor %}-->
+        <div class="col-sm-2">
+            <a role="button" class="btn btn-primary ms-2" style="margin-top: 2%;"
+               href="http://127.0.0.1:5050/course/dependencies/visualization">
+                Visualize Course Dependencies
+            </a>
+        </div>
+        <div class="col-sm-10">
+            {% for key, value in course_display_style_info_dict.items() %}
+            <p>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#{{key}}" role="button"
+                   aria-expanded="false" aria-controls="collapseExample" style="margin-top: 2%; width: 100%;">
+                    {{ key }}
+                </a>
+            </p>
+            <div class="collapse" id="{{key}}">
+                <div class="card card-body">
+                    <h4 class="card-title">Details for the course
+                        <a role="button" class="btn btn-link" style="font-size: 24px;"
+                           href="http://127.0.0.1:5050/course/{{key}}/detail">
+                            {{ value[1] }}
+                        </a>
+                    </h4>
+                    <h5 class="card-text">Participants: {{ value[2] }}</h5>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

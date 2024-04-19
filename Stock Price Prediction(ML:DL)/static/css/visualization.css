@@ -1,0 +1,20 @@
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
+h2 {
+	font: bold 100% Consolas, Monaco, monospace;
+	border-right: .1em solid black;
+	width: 16.5em;
+	width: 80ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-animation-name: typing, blink-caret;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-iteration-count: 1, infinite;
+	-webkit-animation-timing-function: step(39, end);
+}
+
+h2 span {
+    font: 300% !important;
+}

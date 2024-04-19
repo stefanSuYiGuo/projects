@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="input-group mb-3 col-6" id="CILOInput">
+        <span class="input-group-text">Input CILO</span>
+        <input type="text" class="form-control" placeholder="Input CILO Here" name="CILO" id="inputCILO">
+    </div>
+    <div class="col-6">
+        <h3><span class="badge bg-info text-dark">Prerequisite CILOs List</span></h3>
+        <div class="list-group">
+            {% for CILO in prerequisite_CILOs_list %}
+            <label class="list-group-item list-group-item-info">
+                <input class="form-check-input me-1" type="checkbox" value="{{ CILO }}" name="CILO">
+                {{ CILO }}
+            </label>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<button type="button" class="btn btn-dark" style="font-size:18px; margin-top: 10px;" id="newCILO">
+    <!-- <i style="font-size:24px; color: #34CBEE" class="fa">&#xf067;</i> -->
+    <i class="fa fa-plus"></i>
+    Add a CILO
+</button>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+		$("#newCILO").click(function() {
+			$("#CILOInput").append('<div class="input-group mb-3">');
+			$("#CILOInput").append('<span class="input-group-text">Input CILO</span>');
+			$("#CILOInput").append('<input type="text" class="form-control" placeholder="Input CILO Here" name="CILO">');
+			$("#CILOInput").append('</div>');
+		});
+	});
+</script>

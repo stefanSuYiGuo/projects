@@ -1,0 +1,38 @@
+<!-- components files -->
+<!--<div class="collapse" id="navbarToggleExternalContent">-->
+<!--  <div class="bg-dark p-4">-->
+<!--    <h5 class="text-white h4">Collapsed content</h5>-->
+<!--    <span class="text-muted">Toggleable via the navbar brand.</span>-->
+<!--  </div>-->
+<!--</div>-->
+<!--<nav class="navbar navbar-dark bg-dark">-->
+<!--  <div class="container-fluid">-->
+<!--    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--      <span class="navbar-toggler-icon"></span>-->
+<!--    </button>-->
+<!--  </div>-->
+<!--</nav>-->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarToggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{ url_for('user.index') }}">DegreeOverview</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarToggle">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="{% if request.endpoint == 'user.login' %}active{% endif %}">
+          <a href="{{ url_for('user.login') }}">Login</a>
+        </li>
+        <li class="{% if request.endpoint == 'user.register' %}active{% endif %}">
+          <a href="{{ url_for('user.register') }}">Register</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

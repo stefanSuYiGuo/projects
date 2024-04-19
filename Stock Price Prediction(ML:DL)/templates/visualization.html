@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+
+{% block prediction %}
+<div style="margin-left: 20%; display: {{ suggestion_display }}">
+    <h2>You can buy {{ symbol }} stock in the near future.<br>Investment needs to be cautious.</h2>
+    <div class="row d-flex flex-fill justify-content-center" style="margin-left: 5%;">
+        <img src="static/{{ symbol }}.png">
+    </div>
+</div>
+<div style="margin-left: 20%; display: {{ train_display }}>">
+    <h2>You can train the {{ symbol }} stock <a href="https://colab.research.google.com/drive/1O98Folyeti0Pqr7m2MpxvHvjL9GT3a_L?usp=sharing" target="_blank" rel="noreferrer noopener">here</a> and get the result.<br>After getting result, replace local models folder with the folder from colab.</h2>
+    <h6>If you don't want to train, just want to see the source code. <a href="source_code" target="_blank" rel="noreferrer noopener">Click here</a></h6>
+</div>
+{% endblock %}

@@ -1,0 +1,28 @@
+Date: 2021-05-28
+# TODO: Add pre-CILOs if any prerequisite is selected in the course creation page (Priority: HIGH)
+# TODO: Update CILOs insertion into database (Priority: HIGH)
+# TODO: Upload CILOs & Assessment Methods via Files (Priority: HIGH)
+# TODO: Teacher visualizes CILOs dependencies (Priority: HIGH)
+# TODO: Course Designer visualize dependencies of CILOs (Priority: HIGH)
+
+Date: 2021-05-29
+# TODO: courseDisplay.html Card Title
+# TODO: Search Function (Priority: HIGH)
+# TODO: All users can visualize degree course dependencies (Priority: HIGH)
+# TODO: Students visualizes CILOs (Priority: HIGH)
+# TODO: Students visualize performance (Priority: HIGH)
+
+Priority: MIDDLE
+# TODO: Error page in Creating a New Course (Priority: MIDDLE) Finish Date: 2021-05-28
+# TODO: Log operations (Priority: MIDDLE -> HIGH) Finish Date: 2021-05-29
+# TODO: Modify mapping insertion so that making sure that all CILOs are select at least once Finish Date: 2021-05-30
+# TODO: 100 percent check Finish Date: 2021-05-30
+
+Priority: LOW
+# TODO: beauty repeatCourseRegisterError.html and make page logic right (Priority: LOW) Finish Date: 2021-05-30
+    1. Modify rules for different sections
+    2. Add a checkbox to make sure that user have known all the rules
+    3. Add a button to go back to previous page after three seconds
+# TODO: if the course does not have prerequisite, then change the information in 'setCILOsOnlineModalForm.html'.
+    1. Dismiss "Prerequisite CILOs List" badge or other address method
+    #  (Priority: LOW) Finish Date: 2021-05-30

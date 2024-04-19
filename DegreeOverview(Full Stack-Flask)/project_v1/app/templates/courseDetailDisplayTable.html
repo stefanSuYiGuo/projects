@@ -1,0 +1,117 @@
+<div class="container-fluid" style="margin-top: 30px; width: 80%;">
+    <table class="table table-striped table-hover table-dark">
+        <thead>
+        <tr>
+            <th colspan="6" class="text-center">{{ courseCode }} {{ courseName }}</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="text-center">
+            <td>Course Code</td>
+            <td>{{ courseCode }}</td>
+            <td>Course Name</td>
+            <td>{{ courseName }}</td>
+            <td>Course Type</td>
+            <td>{{ courseType }}</td>
+        </tr>
+        <tr class="text-center">
+            <td colspan="2">Participants</td>
+            <td colspan="1">{{ participants_number }}</td>
+            <td colspan="2">Current Lecturer</td>
+            <td>{{ current_lecturer }}</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="text-center align-middle">CILOs</td>
+            <td colspan="4">
+                <ol class="list-group list-group-numbered">
+                    {% for CILO in CILOs_list %}
+                    <li class="list-group-item list-group-item-warning">{{ CILO }}</li>
+                    {% endfor %}
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="text-center align-middle">Assessment Method</td>
+            <td colspan="4">
+                <ul class="list-group">
+                    {% for assessment in assessment_method_list %}
+                    <li class="list-group-item list-group-item-info">{{ assessment }}</li>
+                    {% endfor %}
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="text-center align-middle">Mapping Matrix</td>
+            <td colspan="4">
+                <table class="table table-dark table-sm table-bordered border-primary">
+                    <thead>
+                        <tr class="text-center">
+                            <td>Evaluation Method</td>
+                            <td>Percentage</td>
+                            <td>CILOs</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {% for item in mapping_dict %}
+                    <tr class="text-center">
+                        {% for info in mapping_dict[item] %}
+                        <td>{{ info }}</td>
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="text-center align-middle">Prerequisite</td>
+            <td colspan="4" class="text-center">
+                {% for prerequisite in prerequisites_list %}
+                    {% if prerequisite == 'None' %}
+                    {{ prerequisite }}
+                    {% else %}
+                    <a role="button" class="btn btn-link" href="http://127.0.0.1:5050/course/{{prerequisite}}/detail">
+                        {{ prerequisite }}
+                    </a>
+                    {% endif %}
+                {% endfor %}
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="text-center align-middle">Post Course</td>
+            <td colspan="4" class="text-center">
+                {% if post_courses_list_length == 0 %}
+                None
+                {% else %}
+                    {% for post_course in post_courses_list %}
+                    <a role="button" class="btn btn-link" href="http://127.0.0.1:5050/course/{{post_course}}/detail">
+                        {{ post_course }}
+                    </a>
+                    {% endfor %}
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" class="text-center align-middle">
+                {% if role != 'Student' %}
+                <a role="button" class="btn btn-primary ms-2" style="margin-top: 2%; width: 97%;"
+                   href="http://127.0.0.1:5050/course/{{courseCode}}/analysis">
+                    Analysis Course Result
+                </a>
+                {% else %}
+                <a role="button" class="btn btn-primary ms-2" style="margin-top: 2%; width: 97%;"
+                   href="http://127.0.0.1:5050/course/{{courseCode}}/performance">
+                    Show Course Performance
+                </a>
+                {% endif %}
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    {% if role == 'Course Designer' %}
+    <a role="button" class="btn btn-primary ms-2" style="margin-top: 2%;"
+       href="http://127.0.0.1:5050/course/{{courseCode}}/modifyTemplate">
+        Modify
+    </a>
+    {% endif %}
+</div>

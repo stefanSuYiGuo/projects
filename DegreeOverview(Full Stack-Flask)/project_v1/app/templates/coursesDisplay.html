@@ -1,0 +1,35 @@
+<div class="container-fluid" style="margin-top: 30px; width: 90%;">
+    <div class="row">
+        <div class="col-sm-2" style="margin-top: 2%;">
+            <a role="button" class="btn btn-primary ms-2" style="margin-top: 2%;"
+               href="http://127.0.0.1:5050/course/dependencies/visualization">
+                Visualize Course Dependencies
+            </a>
+            {% if role == 'Course Designer' %}
+            <a role="button" class="btn btn-primary ms-2" style="margin-top: 2%; width: 97%;"
+               href="http://127.0.0.1:5050/user/{{role}}/home/{{name}}">
+                Create a New<br>Course
+            </a>
+            {% endif %}
+        </div>
+        <div class="col-sm-10">
+            <div class="card-group">
+                <div class="row">
+                    {% for key, value in course_display_style_info_dict.items() %}
+                    <div class="card text-white {{ value[0] }} col-sm-3" style="margin: 2%;">
+                        <div class="card-header">
+                            <a role="button" class="btn btn-link" href="http://127.0.0.1:5050/course/{{key}}/detail">
+                                {{ key }}
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">{{ value[1] }}</h5>
+                            <p class="card-text">Participants: {{ value[2] }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

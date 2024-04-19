@@ -1,0 +1,35 @@
+<form method="post" action="../../../courseDesigner/assessmentCILOMapping">
+    <div class="table-responsive">
+        <table class="table table-success table-striped table-hover align-middle">
+            <thead class="table-dark">
+            <tr>
+                <td>Assessment Methods</td>
+                <td>Corresponding CILOs of {{ course_code }}</td>
+                <td>Percentage Value</td>
+            </tr>
+            </thead>
+            {% for assessment in getAssessments_list %}
+            <tr>
+                <td>{{ assessment }}</td>
+                <td>
+                    <div class="list-group">
+                        {% for CILO in CILOs_result_list %}
+                        <label class="list-group-item">
+                            <input type="checkbox" class="form-check-input me-1" value="{{ CILO }}"
+                                   name="{{ assessment }}">
+                            {{ CILO }}
+                        </label>
+                        {% endfor %}
+                    </div>
+                </td>
+                <td>
+                    <span class="input-group-text" id="basic-addon1">Percentage</span>
+                    <input type="text" class="form-control" name="{{ assessment }}"
+                           placeholder="Please Input Percentage of This Assessment Method Here">
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    <button type="submit" class="btn btn-primary" style="margin-bottom: 20px;">Submit</button>
+</form>

@@ -1,0 +1,42 @@
+<h5 class="card-title">Create CILOs Online</h5>
+<p class="card-text">By clicking Go and Set button below, a course designer can set CILOs Online.</p>
+<!--<a href="#" class="btn btn-primary">Go and Set</a>-->
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Go and Set
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+     aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <form method="post" action="../../../courseDesigner/addCILOs">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Set CILOs</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    {% include 'setCILOsOnlineModalForm.html' %}
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="getInputCILO()">Confirm</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    function getInputCILO(){
+        var inputCILO = document.getElementById('inputCILO').value;
+        if (inputCILO == ''){
+            alert('Please input CILO!');
+        }
+        else{
+            alert('All the information is valid, you can submit now !');
+        }
+    }
+</script>

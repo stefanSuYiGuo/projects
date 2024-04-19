@@ -1,0 +1,124 @@
+<div class="container">
+    <form method="post" action="../../../courseDesigner/addDetails"
+          style="margin-bottom: 25px;
+          {% if form_status == 'none' %}
+          display: none;
+          {% else %}
+          display: block;
+          {% endif %}">
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Course Code</span>
+            <input type="text" class="form-control" placeholder="Input Course Code for a New Course Here"
+                   aria-label="courseCode" aria-describedby="basic-addon1" name="createCourseInfo">
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon2">Course Name</span>
+            <input type="text" class="form-control" placeholder="Input New Course Name Here"
+                   aria-label="courseName" aria-describedby="basic-addon2" name="createCourseInfo">
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01">Course Type</label>
+            <select class="form-select" id="inputGroupSelect01" name="createCourseInfo">
+                <option selected>Choose...</option>
+                <option value="MR" name="createCourseInfo">MR</option>
+                <option value="ME" name="createCourseInfo">ME</option>
+                <option value="FE" name="createCourseInfo">FE</option>
+            </select>
+        </div>
+<!--        <div class="input-group mb-3">-->
+<!--            <span class="input-group-text" id="basic-addon3">Prerequisite</span>-->
+<!--            <input type="text" class="form-control" placeholder="Input Course Prerequisite Here"-->
+<!--                   aria-label="prerequisite" aria-describedby="basic-addon3" name="createCourseInfo">-->
+<!--        </div>-->
+        <h2><span class="badge bg-secondary">Select Prerequisite</span></h2>
+        <div class="form-check form-switch">
+            <div class="row">
+                {% for course in course_list %}
+                    <div class="col-sm-3">
+                        <input class="form-check-input" type="checkbox" name="createCourseInfo" value="{{course}}">
+                        {{ course }}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <button type="submit" class="btn btn-dark" style="font-size:18px" id="Create">
+            <!-- <i style="font-size:24px; color: #34CBEE" class="fa">&#xf067;</i> -->
+            <i class="fa fa-plus"></i>
+            Create
+        </button>
+    </form>
+    <div id="details" style="{% if status == 'block' %} display: {{ status }}; {% else %} display: none; {% endif %}">
+        <ul class="nav nav-pills nav-fill mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="btn btn-primary nav-link {{ tab_CILO_isActive }}" id="pills-CILO-tab" data-bs-toggle="pill"
+                   data-bs-target="#pills-CILO"
+                   type="button" role="tab" aria-controls="pills-CILO" aria-selected="false">Set CILOs
+                </a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link {{ tab_assessment_isActive }}" id="pills-assessment-method-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-assessment-method"
+                        type="button" role="tab" aria-controls="pills-assessment-method" aria-selected="false">Set
+                    Assessment Methods
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link {{ tab_mapping_isActive }}" id="pills-percentage-mapping-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-percentage-mapping"
+                        type="button" role="tab" aria-controls="pills-percentage-mapping" aria-selected="false">
+                    Percentage Mapping
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade
+                        {% if tab_content_CILO_isActive == 'active'%}
+                        {{ tab_content_CILO_isActive }}
+                        {% else %}
+                        {% endif %}
+                        {% if tab_content_CILO_isShow == 'show'%}
+                        {{ tab_content_CILO_isShow }}
+                        {% else %}
+                        {% endif %}"
+                 id="pills-CILO" role="tabpanel" aria-labelledby="pills-CILO-tab">
+                {% include 'selectCILOsCreationMode.html' %}
+            </div>
+            <div class="tab-pane fade
+                        {% if tab_content_assessment_isActive == 'active'%}
+                        {{ tab_content_assessment_isActive }}
+                        {% else %}
+                        {% endif %}
+                        {% if tab_content_assessment_isShow == 'show'%}
+                        {{ tab_content_assessment_isShow }}
+                        {% else %}
+                        {% endif %}"
+                 id="pills-assessment-method" role="tabpanel"
+                 aria-labelledby="pills-assessment-method-tab">
+                {% include 'selectAssessmentCreationMode.html' %}
+            </div>
+            <div class="tab-pane fade
+                        {% if tab_content_mapping_isActive == 'active'%}
+                        {{ tab_content_mapping_isActive }}
+                        {% else %}
+                        {% endif %}
+                        {% if tab_content_mapping_isShow == 'show'%}
+                        {{ tab_content_mapping_isShow }}
+                        {% else %}
+                        {% endif %}"
+                 id="pills-percentage-mapping" role="tabpanel"
+                 aria-labelledby="pills-percentage-mapping-tab">
+                {% include 'mappingCILOsAndAssessments.html' %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+<!--    function get_item(id) {-->
+<!--        return document.getElementById(id);-->
+<!--    }-->
+
+<!--    get_item("Create").onclick=function() {-->
+<!--        get_item("details").style.display = "block";-->
+<!--    }-->
+</script>

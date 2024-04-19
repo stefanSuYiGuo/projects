@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div style="margin-left: 20%;">
+    <form method="post" action="predict">
+        <label class="form-label fs-2">Ticker Selection</label>
+        <p style="color: red; display: {{ message_display }}">Currently, you can only choose GOOGL and click Predict button to see the prediction results directly since it is pre-trained. Otherwise, you will wait for at least 2 hours to see the visualization results.<br>You can also choose to train the ticker you select by clicking Predict button, but again, it takes a really long time.</p>
+        <select class="form-select form-select-lg mb-3" name="symbol">
+            <option selected>GOOGL</option>
+            {% for symbol in symbols_list %}
+                <option value="{{ symbol }}">{{ symbol }}</option>
+            {% endfor %}
+        </select>
+        <br>
+        <button type="submit" class="btn btn-primary">Predict</button>
+    </form>
+</div>
+
+{% block prediction %}
+{% endblock %}
+
+{% endblock %}

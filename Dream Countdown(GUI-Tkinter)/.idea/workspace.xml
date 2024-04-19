@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="49a88ca7-5b6c-4220-8731-5db005996eb1" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YsuOENBwvwHbH74rpQHOefB2HR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="Python.sign_in_test">
+    <configuration name="sign_in_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Life" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sign_in_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="time_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Life" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/time_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="window_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Life" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/window_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.sign_in_test" />
+        <item itemvalue="Python.window_test" />
+        <item itemvalue="Python.time_test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="49a88ca7-5b6c-4220-8731-5db005996eb1" name="Default Changelist" comment="" />
+      <created>1583743588310</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583743588310</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="548" y="172" key="FileChooserDialogImpl" timestamp="1583924901786">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="548" y="172" key="FileChooserDialogImpl/0.0.1536.864/-1440.111.1440.900@0.0.1536.864" timestamp="1583924901786" />
+    <state width="1514" height="204" key="GridCell.Tab.0.bottom" timestamp="1583924812562">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1514" height="204" key="GridCell.Tab.0.bottom/0.0.1536.864/-1440.111.1440.900@0.0.1536.864" timestamp="1583924812562" />
+    <state width="1514" height="259" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1583857313670" />
+    <state width="1514" height="204" key="GridCell.Tab.0.center" timestamp="1583924812554">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1514" height="204" key="GridCell.Tab.0.center/0.0.1536.864/-1440.111.1440.900@0.0.1536.864" timestamp="1583924812554" />
+    <state width="1514" height="259" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1583857313670" />
+    <state width="1514" height="204" key="GridCell.Tab.0.left" timestamp="1583924812554">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1514" height="204" key="GridCell.Tab.0.left/0.0.1536.864/-1440.111.1440.900@0.0.1536.864" timestamp="1583924812554" />
+    <state width="1514" height="259" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1583857313670" />
+    <state width="1514" height="204" key="GridCell.Tab.0.right" timestamp="1583924812562">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1514" height="204" key="GridCell.Tab.0.right/0.0.1536.864/-1440.111.1440.900@0.0.1536.864" timestamp="1583924812562" />
+    <state width="1514" height="259" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1583857313670" />
+    <state x="476" y="261" key="com.intellij.ide.util.TipDialog" timestamp="1583924871548">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="476" y="261" key="com.intellij.ide.util.TipDialog/0.0.1536.864/-1440.111.1440.900@0.0.1536.864" timestamp="1583924871548" />
+    <state x="815" y="186" width="672" height="678" key="search.everywhere.popup" timestamp="1583865928091">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="815" y="186" width="672" height="678" key="search.everywhere.popup/0.0.1536.864/-1440.111.1440.900@0.0.1536.864" timestamp="1583865928091" />
+  </component>
+</project>
