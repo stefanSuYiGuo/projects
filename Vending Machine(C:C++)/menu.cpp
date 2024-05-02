@@ -1,6 +1,5 @@
 /**********************************************
-Author: Group 7
-	Yiguo SU
+Author: Yiguo SU
 Date:2019/5/19
 Description:
 	This is our automatic seller machine.
