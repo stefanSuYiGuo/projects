@@ -2,7 +2,14 @@
 
 This is a repository created by Stefan Su. All projects can be seen and forked above.
 
+## Technical Working Experiences
+- Worked on Accenture as full stack developer. Used Java Spring Cloud + Python Flask + Python ML/DL + VUE.js in project.
+- Worked on Attoney firm full stack web development (Flask + React.js + AWS)  
+- Worked on Metropolitan Transportation Authority (MTA-NYC) to create, update, and maintain MTA's public website. ([Here](https://metrics.mta.info/)) With the help of Python, HTML, JS, as well as data automation process, the webpages' performance remains excellent with such huge data in NYC. (Azure-Synapse, Airflow, Hyperion, Spark)
+
 ---
+
+## Projects Brief Description
 
 1. **Vending Machine**: C CLI Project
 2. **College Financial System**: A Java Full Stack Project aims to help college financial department manage tuition and other fees.
@@ -12,6 +19,4 @@ This is a repository created by Stefan Su. All projects can be seen and forked a
 6. **Daily Check In**: Python GUI Project to check daily to-dos. (Tkinter)
 7. **Final Year Project - NLP/ML**: A Project Built a Siri-liked voice system: pre-version of ChatGPT. Made this in 2021-2022.
 8. **Stock Price Prediction(ML/DL)**: A Project to predict price of stock selected, by intergrating frontend and backend with ML/DL.
-9. Worked on Accenture as full stack developer. Used Java Spring Cloud + Python Flask + Python ML/DL + VUE.js in project.
-10. Worked on Attoney firm full stack web development (Flask + React.js + AWS)
-11. Work on Metropolitan Transportation Authority (MTA-NYC) to create, update, and maintain MTA's public website. ([Here](https://metrics.mta.info/)) With the help of Python, HTML, JS, as well as data automation process, the webpages' performance remains excellent with such huge data in NYC. (Azure-Synapse, Airflow, Hyperion, Spark)
+9. **Marketing Data Analyst(DE/ML)**: A project to analyse, predict and visualize the sales, price and other related corr of a food market. The implemetation is achieved by Jupyter and ML/DL.
